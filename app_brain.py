@@ -74,7 +74,8 @@ class AppBrain:
     def save_file(self):
         try:
             if self.current_img:
-                path = filedialog.asksaveasfilename(defaultextension=".*", initialdir="edited_img", title="Save File", filetypes=(("PNG Files", "*.png"), ("JPG Files", "*.jpg"), ("All FIles", "*.*")))
+                path = filedialog.asksaveasfilename(defaultextension=".*", initialdir="edited_img", title="Save File",
+                                                    filetypes=(("PNG Files", "*.png"), ("JPG Files", "*.jpg"), ("All FIles", "*.*")))
                 self.current_img.save(path)
             else:
                 messagebox.showinfo("Information", "First add watermark to your image.")
