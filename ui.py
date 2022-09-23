@@ -1,6 +1,6 @@
 from tkinter import *
 import customtkinter
-from PIL import Image, ImageTk, ImageFont, ImageDraw
+from PIL import Image, ImageTk
 from app_brain import AppBrain
 
 FONT_NAME = 'Helvetica'
