@@ -21,7 +21,7 @@ class AppBrain:
 
     def get_path_file(self):
         self.filename = filedialog.askopenfilename(initialdir="images_to_mark", title="Select A File",
-                                                   filetypes=(("PNG Files", "*.png"), ("JPG Files", "*.jpg"), ("All FIles", "*.*")), )
+                                                   filetypes=(("PNG Files", "*.png"), ("JPG Files", "*.jpg"), ("All FIles", "*.*")))
         return self.filename
 
     def open_file(self):
